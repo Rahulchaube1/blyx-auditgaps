@@ -1,0 +1,12 @@
+use auditgaps;
+
+fn main() {
+    let ids = [10, 12, 12, 11, 13];
+    let result = auditgaps_sequence(ids);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
